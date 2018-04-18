@@ -16,7 +16,6 @@
 	#section-2 {
 		top: 100vh;
 		height: 650vh;
-
 	}
 	#section-2 div#background {
 		background: url(images/svg/dashed-line.svg) no-repeat 30% bottom, url(images/svg/3w-7b.svg) repeat-x;
