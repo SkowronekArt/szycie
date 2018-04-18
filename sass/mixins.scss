@@ -1,0 +1,92 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	-ms-border-radius:     $radius;
+	border-radius:         $radius;
+}
+@mixin animation($name) {
+	-webkit-animation-name:	$name;
+	-moz-animation-name: 	$name;
+	-o-animation-name: 		$name;
+	animation-name: 		$name;
+}
+@mixin animation-duration($duration) {
+	-webkit-animation-duration:	$duration;
+	-moz-animation-duration: 	$duration;
+	-o-animation-duration: 		$duration;
+	animation-duration: 		$duration;
+}
+@mixin animation-direction($direction) {
+	-webkit-animation-direction:	$direction;
+	-moz-animation-direction: 		$direction;
+	-o-animation-direction: 		$direction;
+	animation-direction: 			$direction;
+}
+@mixin animation-iteration-count($iteration) {
+	-webkit-animation-iteration-count:	$iteration;
+	-moz-animation-iteration-count: 	$iteration;
+	-o-animation-iteration-count: 		$iteration;
+	animation-iteration-count: 			$iteration;
+}
+@mixin animation-delay($delay) {
+	-webkit-animation-delay:	$delay;
+	-moz-animation-delay: 		$delay;
+	-o-animation-delay: 		$delay;
+	animation-delay: 			$delay;
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content
+	}
+	@-moz-keyframes #{$name} {
+		@content
+	}
+	@-o-keyframes #{$name} {
+		@content
+	}
+	@keyframes #{$name} {
+		@content
+	}
+}
+
+
+@mixin screen($size) {
+	@if $size == 'xl' {
+		@media all and (min-width: 1200px) {
+			@content
+		}
+	}
+	@if $size == 'lg' {
+		@media all and (min-width: 992px) {
+			@content
+		}
+	}
+	@if $size == 'sm' {
+		@media all and (min-width: 768px) {
+			@content
+		}
+	}
+	@if $size == 'xs' {
+		@media all and (min-width: 576px) {
+			@content
+		}
+	}
+}
+
+$font-decorated: Abril Fatface;
+$font-decorated: Righteous;
+$font-decorated: Lobster;
+$font-normal: Open Sans;
+
+$grid-gutter-width: 60px;
+
+$background-body: #fff;
+$background-white: #fff;
+$black: rgba(0,0,0,1);
+$grey: rgba(0,0,0,0.7);
+$white: #fff;
+$primary-color: #000;
+$full-grey: #444;
+$Violet: #983C28;
+$Yellow: #c7a76e;

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+@import '_svg.scss';
+
+* {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+}
+.black-pause {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+}
+section {
+	width: 100vw;
+	text-align: center;
+}
+header {
+	position: relative;
+	padding: 1vh 0;
+	animation-name: showBck;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iterantion-count: 1;
+}
+.full-width {
+	width: 100vw;
+}
+.full-height {
+	height: 100vh;
+}
+.full-wh {
+	width: 100vw; 
+	height: 100vh;
+}
+.absolute {
+	position: absolute;
+}
+@keyframes showBck{
+	0% {
+		background-color: white;
+	}
+	40% {
+		background-color: white;
+	}
+	100% {
+		background-color: black;
+	}
+}

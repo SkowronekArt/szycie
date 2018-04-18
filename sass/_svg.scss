@@ -1,0 +1,114 @@
+#google-G {
+	animation-delay: 3.6s;
+	fill:#488EF1;
+}
+#google-o1 {
+	animation-delay: 3.8s;
+	fill:#D85646;
+}
+#google-o2 {
+	animation-delay: 4s;
+	fill:#F3BA33;
+}
+#google-g {
+	animation-delay: 4.2s;
+	fill:#488EF1;
+}
+#google-l {
+	animation-delay: 4.4s;
+	fill:#5DA052;
+}
+#google-e {
+	animation-delay: 4.6s;
+	fill:#D85646;
+}
+.google-paths {
+	stroke:#000000;
+	stroke-width:4;
+	stroke-miterlimit:10;
+	animation-name: google-paths-display;
+	opacity: 0;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-duration: 0.2s;
+	transform-origin: center;
+}
+@keyframes google-paths-display {
+	from {
+		opacity: 0;
+		transform: scale(2);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+svg {
+	width: 50vw;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+.clip {
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: svgAnimation;
+	fill:none;
+	stroke: black;
+	stroke-linecap: round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+	stroke-dasharray: 10000 10000;
+	stroke-dashoffset: 10000;
+}
+#uszyje_clip {
+	clip-path: url(#uszyjeDocelowe);
+	stroke-width: 20;
+	animation-name: svgAnimation, svgAnimationToWhite;
+	animation-delay: 1s;
+	animation-duration: 2s, 20s;
+}
+
+#w_sam_raz_google_clip {
+	clip-path: url(#wSamRazGoogleDocelowe);
+	stroke-width: 30;
+	animation-name: svgAnimation, svgAnimationToWhite;
+	animation-delay: 2.5s;
+	animation-duration: 2s, 18s;
+}
+/* #Anna_Skowronek_clip {
+	clip-path: url(#AnnaSkowronekDocelowe);
+	stroke-width: 30;
+	animation-delay: 3.5s;
+	animation-duration: 1s;
+} */
+#najpierw_ja_wykresle_clip {
+	clip-path: url(#najpierwJaWykresleDocelowe);
+	stroke-width: 30;
+	animation-delay: 0;
+	animation-duration: 1s;
+	stroke: white;
+}
+
+
+@keyframes svgAnimation {
+	from {
+		stroke-dashoffset: 10000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes svgAnimationToWhite {
+	from {
+		stroke: black;
+	}
+	to {
+		stroke: white;
+	}
+}
